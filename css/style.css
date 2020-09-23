@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/interface.png) no-repeat;
+    height: 100%;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-blend-mode: darken;
+    margin: auto;
+    width: 50%;
+    padding: 20px;
+    font-family: arial, Helvetica, sans-serif;
+    color: white;
+    line-height: 1.6;
+
+}
+
+#kichwa {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+#title {
+    text-transform: capitalize;
+    font-size: 24px;
+    padding-bottom: 10px;
+}
+
+#description {
+    font-style: italic;
+}
+
+#container {
+    padding: 30px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0.5);
+     overflow: auto;
+}
+
+input[type=text],
+[type=email],
+[type=number],
+[type=submit] {
+    padding: 6px;
+    width: 100%;
+}
+
+textarea {
+    max-width: 100%;
+}
+
+input[type=submit] {
+    background: #37AF65;
+    color: white;
+    font-size: 18px;
+}
+footer{
+    text-align: center;
+	padding: 20px;
+	bottom: 0;
+	width:100%;
+	margin: 0 auto;
+}

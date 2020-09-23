@@ -1,45 +1,77 @@
     <!DOCTYPE html>
 
-<html>
+    <html>
 
-<head>
-    <title>
-        Ui/Ux in Nairobi, Kenya.
-    </title>
-<script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-</head>
+    <head>
+        <link href="css/style.css" type="text/css" rel="stylesheet" />
+        <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+        <title>
+            Ui/Ux in Nairobi, Kenya.
+        </title>
+    </head>
 
-<body id="main">
-    <h1 id="title">Questionnare on Ui/Ux development in Nairobi</h1>
-    <p id="description"> Please help us improve the state of web development in Nairobi by filling this questionnare</p>
-    <div id="container">
-
-        <!-- form element -->
-        <form id="survey-form">
-            <label for="name"> Name </label><br>
-            <input type="text" id="name" name="name" placeholder="Enter your name" required><br />
-
-            <label for="email">Email</label><br />
-            <input type="email" id="email" name="email" placeholder="Enter your email"><br />
-
-            <label for="age">Age</label>
-            <input type="range" /><br />
-
-            <label for="dropdown">What option currently describe your Career status?</label><br />
-            <select id="dropdown" name="dropdown" size="5" multiple>
-                <option value="student">Student</option>
-                <option value="employed">Full time job</option>
-                <option value="self-taught">Currently learning Ui/Ux design online</option>
-                <option value="shy">Prefer not to say</option>
-                <option value="hobby">Coding is a Hobby</option><br />
-
-                <input type="submit" value="Submit">
+    <body id="main">
+        <div id="kichwa">
+            <h1 id="title">Questionnare on Ui/Ux development in Nairobi</h1>
+            <p id="description"> Please help us improve the state of Ui/UX in Nairobi by filling this questionnare:</p>
+        </div>
 
 
+        <div id="container">
+            <!-- form element -->
+            <form id="survey-form">
+                <label for="name" id="name-label"> Name </label><br>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required><br /><br />
+
+                <label for="email" id="email-label">Email</label><br />
+                <input type="email" id="email" name="email" placeholder="Enter your email" required><br /><br />
+
+                <label for="number" id="number-label">Age (optional)</label><br />
+                <input type="number" id="number" name="number" min="18" max="99" placeholder="Age" /><br /><br />
+
+                <label for="dropdown">What option currently describe your Career status? </label><br />
+                <select name="dropdown" id="dropdown" type="text">
+                    <optgroup label="Coding-career-progress" type="text">
+                        <option value="student">Student</option>
+                        <option value="employed">Full time job</option>
+                        <option value="hobby">Coding is a hobby</option>
+                        <option value="undecided">Prefer not to say at the moment</option>
+                    </optgroup>
+                </select>
+
+                <br /><br />
+                <label for="radio">Does Kenya have a mature Ui/Ux scene? </label> <br />
+                <input type="radio" id="yes" name="radio" value="yes">
+                <label for="radio1">Yes</label><br>
+                <input type="radio" id="no" name="radio" value="no">
+                <label for="radio2">No</label><br>
+                <input type="radio" id="maybe" name="radio" value="maybe">
+                <label for="radio3">Maybe</label> <br /><br />
+
+                <label for="checkbox" value="checkbox"> What would you like to see improved for better Ui/Ux development in Kenya? (check all that apply) </label><br />
+                <input type="checkbox" id="community" name="checkbox1" value="community" />
+                <label for="checkbox1"> Open Source Comunity </label><br />
+                <input type="checkbox" id="meetups" name="checkbox1" value="meetups" />
+                <label for="checkbox1"> Developer Meetups </label><br />
+                <input type="checkbox" id="courses" name="checkbox1" value="courses" />
+                <label for="checkbox1"> Ui/Ux development courses in schools </label><br />
+                <input type="checkbox" id="challenges" name="checkbox1" value="challenges" />
+                <label for="checkbox1"> Developer challenges to enhance skills </label><br />
+                <input type="checkbox" id="projects" name="checkbox1" value="projects" />
+                <label for="checkbox1"> Online development projects to test skills </label><br /><br />
+
+                <label For="suggestions"> Any suggestions or comments? </label><br />
+                <textarea id="suggestions" name="suggestions" rows="5" cols="80"> </textarea> <br /><br />
+
+                <input type="submit" value="submit" id="submit" />
 
 
-        </form>
-    </div>
-</body>
 
-</html>
+
+
+            </form>
+        </div>
+        <footer>&copy; Eric Kamau - Learning Web Development. </footer>
+    </body>
+
+    </html>
